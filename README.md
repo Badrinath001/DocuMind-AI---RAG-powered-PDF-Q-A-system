@@ -8,6 +8,16 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
 </p>
 
+</p>
+
+<p align="center">
+  <a href="https://intelipdf.streamlit.app/">
+    <img src="https://img.shields.io/badge/Live%20Demo-intelipdf.streamlit.app-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+  </a>
+</p>
+
+<p align="center">
+
 <p align="center">
   <b>An AI-powered PDF Question & Answer System using RAG (Retrieval Augmented Generation)</b>
 </p>
