@@ -5,7 +5,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_groq import ChatGroq
-from langchain_community.embeddings import OllamaEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 
 load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
@@ -33,7 +33,7 @@ if uploaded_file is not None:
 
     # --- NEW: Embed chunks and build a vector store ---
     with st.spinner("🔍 Indexing document for retrieval..."):
-        embeddings = OllamaEmbeddings(model="nomic-embed-text")
+        embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
         vectorstore = Chroma.from_documents(
             documents=chunks,
             embedding=embeddings,
