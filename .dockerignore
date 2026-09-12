@@ -1,0 +1,6 @@
+enu
+__pycache__
+.streamlit
+.git
+.env
+temp.pdf
